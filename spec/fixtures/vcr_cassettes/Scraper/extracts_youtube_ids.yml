@@ -1,0 +1,794 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://ssl.reddit.com/api/login
+    body:
+      encoding: UTF-8
+      string: api_type=json&passwd=<REDDIT_PASSWORD>&user=<REDDIT_USERNAME>
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Tue, 30 Jun 2015 03:20:55 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d3f4bb70490acd227e02b3e61a6be5d1f1435634454; expires=Wed, 29-Jun-16
+        03:20:54 GMT; path=/; domain=.reddit.com; HttpOnly
+      - reddit_session=40926976%2C2015-06-29T20%3A20%3A55%2C568576f13aa54e30b45b5eb179804b487708346e;
+        Domain=reddit.com; Path=/; HttpOnly
+      - secure_session=; Domain=reddit.com; Max-Age=-1435634455; Path=/; expires=Thu,
+        01-Jan-1970 00:00:01 GMT; HttpOnly
+      X-Ua-Compatible:
+      - IE=edge
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache
+      - private, no-cache
+      Pragma:
+      - no-cache
+      X-Moose:
+      - majestic
+      Cf-Ray:
+      - 1fe6bced89a1018d-NRT
+    body:
+      encoding: ASCII-8BIT
+      string: '{"json": {"errors": [], "data": {"need_https": false, "modhash": "ocmluckqu477eb078ce8445fc7829a71c2c8cda2533e8ccbd7",
+        "cookie": "40926976,2015-06-29T20:20:55,568576f13aa54e30b45b5eb179804b487708346e"}}}'
+    http_version: 
+  recorded_at: Tue, 30 Jun 2015 03:20:55 GMT
+- request:
+    method: get
+    uri: http://www.reddit.com/user/<REDDIT_USERNAME>/about.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Cookie:
+      - reddit_session=40926976,2015-06-29T20:20:55,568576f13aa54e30b45b5eb179804b487708346e
+      X-Modhash:
+      - ocmluckqu477eb078ce8445fc7829a71c2c8cda2533e8ccbd7
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 30 Jun 2015 03:20:56 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=df77ce8c5aed94a8bbb44470240dde49c1435634455; expires=Wed, 29-Jun-16
+        03:20:55 GMT; path=/; domain=.reddit.com; HttpOnly
+      X-Ua-Compatible:
+      - IE=edge
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache
+      - private, no-cache
+      Pragma:
+      - no-cache
+      X-Ratelimit-Remaining:
+      - '296'
+      X-Ratelimit-Used:
+      - '4'
+      X-Ratelimit-Reset:
+      - '544'
+      X-Reddit-Tracking:
+      - https://pixel.redditmedia.com/pixel/of_destiny.png?v=vz8x5yRKPSTYp00kVCmfS3pIMZIMlPOLKdJbCXrp0W5sPMWrifllSUJ5Gv73DmxPNuQ6eMEHlds%3D
+      X-Moose:
+      - majestic
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 1fe6bcf46fa40b50-NRT
+    body:
+      encoding: ASCII-8BIT
+      string: '{"kind": "t2", "data": {"has_mail": true, "name": "<REDDIT_USERNAME>",
+        "is_friend": false, "created": 1435371552.0, "hide_from_robots": false, "gold_creddits":
+        0, "modhash": "ft0id0cdng0ca39aaa732d6a23f4c10cdc8743646c6253da5a", "created_utc":
+        1435367952.0, "has_mod_mail": false, "link_karma": 1, "comment_karma": 0,
+        "over_18": false, "is_gold": false, "is_mod": false, "gold_expiration": null,
+        "has_verified_email": false, "id": "od7gg", "inbox_count": 1}}'
+    http_version: 
+  recorded_at: Tue, 30 Jun 2015 03:20:56 GMT
+- request:
+    method: get
+    uri: http://www.reddit.com/comments/3batbp.json?depth=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Cookie:
+      - reddit_session=40926976,2015-06-29T20:20:55,568576f13aa54e30b45b5eb179804b487708346e
+      X-Modhash:
+      - ocmluckqu477eb078ce8445fc7829a71c2c8cda2533e8ccbd7
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 30 Jun 2015 03:20:56 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '7517'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d78d1999654e7f69b0e680864355e74f11435634456; expires=Wed, 29-Jun-16
+        03:20:56 GMT; path=/; domain=.reddit.com; HttpOnly
+      X-Ua-Compatible:
+      - IE=edge
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache
+      - private, no-cache
+      Pragma:
+      - no-cache
+      X-Ratelimit-Remaining:
+      - '295'
+      X-Ratelimit-Used:
+      - '5'
+      X-Ratelimit-Reset:
+      - '544'
+      X-Reddit-Tracking:
+      - https://pixel.redditmedia.com/pixel/of_destiny.png?v=nVZT3ZKlnKfaSuBLwcess2Q%2BYOQIQvJz4MJEpCuFyM2v31BqYvpBxVMKqX8C8P6BKrtppG%2FfIrBdy7ct7y%2FRUA8XTosF9nwo
+      Vary:
+      - accept-encoding
+      X-Moose:
+      - majestic
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 1fe6bcf6f0690b38-NRT
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"kind": "Listing", "data": {"modhash": "8z1e01zsiq6ba3e10f1fd2f82aa59d9d7fcc11ecd08ad41ab3",
+        "children": [{"kind": "t3", "data": {"domain": "youtube.com", "banned_by":
+        null, "media_embed": {"content": "&lt;iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F_Kbnr9fsS7s%3Ffeature%3Doembed&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D_Kbnr9fsS7s&amp;image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F_Kbnr9fsS7s%2Fhqdefault.jpg&amp;key=2aa3c4d5f3de4f5b9120b660ad850dc9&amp;type=text%2Fhtml&amp;schema=youtube\"
+        width=\"600\" height=\"450\" scrolling=\"no\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+        "width": 600, "scrolling": false, "height": 450}, "subreddit": "listentothis",
+        "selftext_html": null, "selftext": "", "likes": null, "suggested_sort": null,
+        "user_reports": [], "secure_media": {"oembed": {"provider_url": "http://www.youtube.com/",
+        "description": "Title: \"High Regard\" Band: The Story So Far Album: Under
+        Soil and Dirt Barter and trade always passive aggressive In spite of who you
+        say you are Smother my name under soil &amp; dirt In the earth Widen the distance
+        apart Fuck an apology, I''m not sorry for anything I''ve", "title": "The Story
+        So Far - High Regard", "url": "http://www.youtube.com/watch?v=_Kbnr9fsS7s",
+        "type": "video", "author_name": "PopPunkParadise", "height": 450, "width":
+        600, "html": "&lt;iframe class=\"embedly-embed\" src=\"https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F_Kbnr9fsS7s%3Ffeature%3Doembed&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D_Kbnr9fsS7s&amp;image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F_Kbnr9fsS7s%2Fhqdefault.jpg&amp;key=2aa3c4d5f3de4f5b9120b660ad850dc9&amp;type=text%2Fhtml&amp;schema=youtube\"
+        width=\"600\" height=\"450\" scrolling=\"no\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+        "thumbnail_width": 480, "version": "1.0", "provider_name": "YouTube", "thumbnail_url":
+        "https://i.embed.ly/1/image?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2F_Kbnr9fsS7s%2Fhqdefault.jpg&amp;key=b1e305db91cf4aa5a86b732cc9fffceb",
+        "thumbnail_height": 360, "author_url": "http://www.youtube.com/user/PopPunkParadise"},
+        "type": "youtube.com"}, "link_flair_text": "Garage Punk", "id": "3batbp",
+        "from_kind": null, "gilded": 0, "archived": false, "clicked": false, "report_reasons":
+        null, "author": "cicispizzaisyummy", "media": {"oembed": {"provider_url":
+        "http://www.youtube.com/", "description": "Title: \"High Regard\" Band: The
+        Story So Far Album: Under Soil and Dirt Barter and trade always passive aggressive
+        In spite of who you say you are Smother my name under soil &amp; dirt In the
+        earth Widen the distance apart Fuck an apology, I''m not sorry for anything
+        I''ve", "title": "The Story So Far - High Regard", "url": "http://www.youtube.com/watch?v=_Kbnr9fsS7s",
+        "type": "video", "author_name": "PopPunkParadise", "height": 450, "width":
+        600, "html": "&lt;iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F_Kbnr9fsS7s%3Ffeature%3Doembed&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D_Kbnr9fsS7s&amp;image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F_Kbnr9fsS7s%2Fhqdefault.jpg&amp;key=2aa3c4d5f3de4f5b9120b660ad850dc9&amp;type=text%2Fhtml&amp;schema=youtube\"
+        width=\"600\" height=\"450\" scrolling=\"no\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+        "thumbnail_width": 480, "version": "1.0", "provider_name": "YouTube", "thumbnail_url":
+        "https://i.ytimg.com/vi/_Kbnr9fsS7s/hqdefault.jpg", "thumbnail_height": 360,
+        "author_url": "http://www.youtube.com/user/PopPunkParadise"}, "type": "youtube.com"},
+        "name": "t3_3batbp", "score": 328, "approved_by": null, "over_18": false,
+        "hidden": false, "preview": {"images": [{"source": {"url": "https://i.redditmedia.com/113iBjyjs6i2e4hR2iBVY_wR5yKf6x49GHop4wt2Mp0.jpg?s=12087c54d287a3c8b98349676a05b9c3",
+        "width": 480, "height": 360}, "resolutions": [{"url": "https://i.redditmedia.com/113iBjyjs6i2e4hR2iBVY_wR5yKf6x49GHop4wt2Mp0.jpg?fit=crop&amp;crop=faces%2Centropy&amp;arh=2&amp;w=108&amp;s=baf4538d6c1251bda76d7b102cad88c1",
+        "width": 108, "height": 81}, {"url": "https://i.redditmedia.com/113iBjyjs6i2e4hR2iBVY_wR5yKf6x49GHop4wt2Mp0.jpg?fit=crop&amp;crop=faces%2Centropy&amp;arh=2&amp;w=216&amp;s=894531999cfbb636e3c50beca62b1074",
+        "width": 216, "height": 162}, {"url": "https://i.redditmedia.com/113iBjyjs6i2e4hR2iBVY_wR5yKf6x49GHop4wt2Mp0.jpg?fit=crop&amp;crop=faces%2Centropy&amp;arh=2&amp;w=320&amp;s=3e7793cc75d1d424d1e6a1fcb0fcf1f0",
+        "width": 320, "height": 240}], "variants": {}, "id": "8uXB6lCI_oNA4G91eydlIV5i35MG46TltbMOm5EO7GM"}]},
+        "thumbnail": "http://b.thumbs.redditmedia.com/gXy5LrDK8KPTzlkDF8COYrDSnvQwiiJFuYMS0p88IUA.jpg",
+        "subreddit_id": "t5_2qxzy", "edited": false, "link_flair_css_class": "garagepunk",
+        "author_flair_css_class": null, "downs": 0, "mod_reports": [], "secure_media_embed":
+        {"content": "&lt;iframe class=\"embedly-embed\" src=\"https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F_Kbnr9fsS7s%3Ffeature%3Doembed&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D_Kbnr9fsS7s&amp;image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F_Kbnr9fsS7s%2Fhqdefault.jpg&amp;key=2aa3c4d5f3de4f5b9120b660ad850dc9&amp;type=text%2Fhtml&amp;schema=youtube\"
+        width=\"600\" height=\"450\" scrolling=\"no\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+        "width": 600, "scrolling": false, "height": 450}, "saved": false, "removal_reason":
+        null, "post_hint": "rich:video", "from": null, "is_self": false, "from_id":
+        null, "permalink": "/r/listentothis/comments/3batbp/the_story_so_far_high_regard_pop_punk_2011/",
+        "stickied": false, "created": 1435438304.0, "url": "https://www.youtube.com/watch?v=_Kbnr9fsS7s",
+        "author_flair_text": null, "title": "The Story So Far - High Regard [pop punk]
+        (2011)", "created_utc": 1435409504.0, "ups": 328, "upvote_ratio": 0.89, "num_comments":
+        45, "visited": false, "num_reports": null, "distinguished": null}}], "after":
+        null, "before": null}}, {"kind": "Listing", "data": {"modhash": "8z1e01zsiq6ba3e10f1fd2f82aa59d9d7fcc11ecd08ad41ab3",
+        "children": [{"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by":
+        null, "removal_reason": null, "link_id": "t3_3batbp", "likes": null, "replies":
+        {"kind": "Listing", "data": {"modhash": "8z1e01zsiq6ba3e10f1fd2f82aa59d9d7fcc11ecd08ad41ab3",
+        "children": [{"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by":
+        null, "removal_reason": null, "link_id": "t3_3batbp", "likes": null, "replies":
+        {"kind": "Listing", "data": {"modhash": "8z1e01zsiq6ba3e10f1fd2f82aa59d9d7fcc11ecd08ad41ab3",
+        "children": [{"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by":
+        null, "removal_reason": null, "link_id": "t3_3batbp", "likes": null, "replies":
+        "", "user_reports": [], "saved": false, "id": "csl6w8f", "gilded": 0, "archived":
+        false, "report_reasons": null, "author": "limnusJosh", "parent_id": "t1_csl1ejd",
+        "score": 2, "approved_by": null, "controversiality": 0, "body": "I was actually
+        a bit insulted, because our music is way better produced and written than
+        what the term implies. Same with TSSF.", "edited": false, "author_flair_css_class":
+        null, "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;I was actually
+        a bit insulted, because our music is way better produced and written than
+        what the term implies. Same with TSSF.&lt;/p&gt;\n&lt;/div&gt;", "subreddit":
+        "listentothis", "score_hidden": false, "name": "t1_csl6w8f", "created": 1435473720.0,
+        "author_flair_text": null, "created_utc": 1435470120.0, "distinguished": null,
+        "mod_reports": [], "num_reports": null, "ups": 2}}], "after": null, "before":
+        null}}, "user_reports": [], "saved": false, "id": "csl1ejd", "gilded": 0,
+        "archived": false, "report_reasons": null, "author": "Lukewill", "parent_id":
+        "t1_cskq28h", "score": 4, "approved_by": null, "controversiality": 0, "body":
+        "Garage punk just sounds insulting. Kinda makes the mods seem like idiots.
+        \n\nBut that''s ok, it''s the content that matters and even if I don''t like
+        it, at least its most likely something I haven''t heard before. ", "edited":
+        false, "author_flair_css_class": null, "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;Garage
+        punk just sounds insulting. Kinda makes the mods seem like idiots. &lt;/p&gt;\n\n&lt;p&gt;But
+        that&amp;#39;s ok, it&amp;#39;s the content that matters and even if I don&amp;#39;t
+        like it, at least its most likely something I haven&amp;#39;t heard before.
+        &lt;/p&gt;\n&lt;/div&gt;", "subreddit": "listentothis", "score_hidden": false,
+        "name": "t1_csl1ejd", "created": 1435460055.0, "author_flair_text": null,
+        "created_utc": 1435456455.0, "distinguished": null, "mod_reports": [], "num_reports":
+        null, "ups": 4}}], "after": null, "before": null}}, "user_reports": [], "saved":
+        false, "id": "cskq28h", "gilded": 0, "archived": false, "report_reasons":
+        null, "author": "limnusJosh", "parent_id": "t3_3batbp", "score": 13, "approved_by":
+        null, "controversiality": 0, "body": "This sub needs to get rid of the \"Garage
+        Punk\" tag. I remember posting my band, which is industrial/hardcore, and
+        I got a Garage Punk tag; hardly similar to a newer Pop Punk band. When they
+        are that different, why even have tags?", "edited": false, "author_flair_css_class":
+        null, "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;This sub
+        needs to get rid of the &amp;quot;Garage Punk&amp;quot; tag. I remember posting
+        my band, which is industrial/hardcore, and I got a Garage Punk tag; hardly
+        similar to a newer Pop Punk band. When they are that different, why even have
+        tags?&lt;/p&gt;\n&lt;/div&gt;", "subreddit": "listentothis", "score_hidden":
+        false, "name": "t1_cskq28h", "created": 1435436157.0, "author_flair_text":
+        null, "created_utc": 1435432557.0, "distinguished": null, "mod_reports": [],
+        "num_reports": null, "ups": 13}}, {"kind": "t1", "data": {"subreddit_id":
+        "t5_2qxzy", "banned_by": null, "removal_reason": null, "link_id": "t3_3batbp",
+        "likes": null, "replies": "", "user_reports": [], "saved": false, "id": "cskjs1i",
+        "gilded": 0, "archived": false, "report_reasons": null, "author": "itsedditonreddit",
+        "parent_id": "t3_3batbp", "score": 23, "approved_by": null, "controversiality":
+        0, "body": "Seriously one of my favorite bands of all time. ", "edited": false,
+        "author_flair_css_class": null, "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;Seriously
+        one of my favorite bands of all time. &lt;/p&gt;\n&lt;/div&gt;", "subreddit":
+        "listentothis", "score_hidden": false, "name": "t1_cskjs1i", "created": 1435423386.0,
+        "author_flair_text": null, "created_utc": 1435419786.0, "distinguished": null,
+        "mod_reports": [], "num_reports": null, "ups": 23}}, {"kind": "t1", "data":
+        {"subreddit_id": "t5_2qxzy", "banned_by": null, "removal_reason": null, "link_id":
+        "t3_3batbp", "likes": null, "replies": "", "user_reports": [], "saved": false,
+        "id": "cskva9f", "gilded": 0, "archived": false, "report_reasons": null, "author":
+        "7_EaZyE_7", "parent_id": "t3_3batbp", "score": 6, "approved_by": null, "controversiality":
+        0, "body": "Oh my god the first song I heard by these guys was [Quicksand.](https://www.youtube.com/watch?v=h3L-xm7bs34)
+        I instantly fell in love with their unique sound, energy and passion. Give
+        a listen to these guys if you like punk rock and pop-punk. Shit just listen
+        to these guys if you like good music!\n\nIf you like what you''re hearing,
+        here are a couple of my favorite songs by them. If you like, listen to their
+        albums all the way through. You wont be let down.\n\n[680 South](https://www.youtube.com/watch?v=6DlYETRuZuQ)\n\n[Closure](https://www.youtube.com/watch?v=zGeBffMzxPs)\n\n[The
+        Glass](https://www.youtube.com/watch?v=G-yt7yUNvlQ)\n\n[Roam](https://www.youtube.com/watch?v=Y2E0Qz3WIqc&amp;index=2&amp;list=PL08971D6ED3A4EFD3)\n\n[Things
+        I Can''t Change](https://www.youtube.com/watch?v=q3ARZTR_Ju8)\n\n[Solo](https://www.youtube.com/watch?v=_NrCpSC2TEw)\n\n[Navy
+        Blue](https://www.youtube.com/watch?v=7KJKTvbk_Us)", "edited": false, "author_flair_css_class":
+        "soundcloud", "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;Oh
+        my god the first song I heard by these guys was &lt;a href=\"https://www.youtube.com/watch?v=h3L-xm7bs34\"&gt;Quicksand.&lt;/a&gt;
+        I instantly fell in love with their unique sound, energy and passion. Give
+        a listen to these guys if you like punk rock and pop-punk. Shit just listen
+        to these guys if you like good music!&lt;/p&gt;\n\n&lt;p&gt;If you like what
+        you&amp;#39;re hearing, here are a couple of my favorite songs by them. If
+        you like, listen to their albums all the way through. You wont be let down.&lt;/p&gt;\n\n&lt;p&gt;&lt;a
+        href=\"https://www.youtube.com/watch?v=6DlYETRuZuQ\"&gt;680 South&lt;/a&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;a
+        href=\"https://www.youtube.com/watch?v=zGeBffMzxPs\"&gt;Closure&lt;/a&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;a
+        href=\"https://www.youtube.com/watch?v=G-yt7yUNvlQ\"&gt;The Glass&lt;/a&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;a
+        href=\"https://www.youtube.com/watch?v=Y2E0Qz3WIqc&amp;amp;index=2&amp;amp;list=PL08971D6ED3A4EFD3\"&gt;Roam&lt;/a&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;a
+        href=\"https://www.youtube.com/watch?v=q3ARZTR_Ju8\"&gt;Things I Can&amp;#39;t
+        Change&lt;/a&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;a href=\"https://www.youtube.com/watch?v=_NrCpSC2TEw\"&gt;Solo&lt;/a&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;a
+        href=\"https://www.youtube.com/watch?v=7KJKTvbk_Us\"&gt;Navy Blue&lt;/a&gt;&lt;/p&gt;\n&lt;/div&gt;",
+        "subreddit": "listentothis", "score_hidden": false, "name": "t1_cskva9f",
+        "created": 1435446857.0, "author_flair_text": "soundcloud", "created_utc":
+        1435443257.0, "distinguished": null, "mod_reports": [], "num_reports": null,
+        "ups": 6}}, {"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by":
+        null, "removal_reason": null, "link_id": "t3_3batbp", "likes": null, "replies":
+        {"kind": "Listing", "data": {"modhash": "8z1e01zsiq6ba3e10f1fd2f82aa59d9d7fcc11ecd08ad41ab3",
+        "children": [{"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by":
+        null, "removal_reason": null, "link_id": "t3_3batbp", "likes": null, "replies":
+        "", "user_reports": [], "saved": false, "id": "csks9gb", "gilded": 0, "archived":
+        false, "report_reasons": null, "author": "Zsrupert1", "parent_id": "t1_cskl9jn",
+        "score": 4, "approved_by": null, "controversiality": 0, "body": "It is a bit
+        jarring, isn''t it? I love TSSF but I can understand why people wouldn''t
+        ", "edited": false, "author_flair_css_class": null, "downs": 0, "body_html":
+        "&lt;div class=\"md\"&gt;&lt;p&gt;It is a bit jarring, isn&amp;#39;t it? I
+        love TSSF but I can understand why people wouldn&amp;#39;t &lt;/p&gt;\n&lt;/div&gt;",
+        "subreddit": "listentothis", "score_hidden": false, "name": "t1_csks9gb",
+        "created": 1435440689.0, "author_flair_text": null, "created_utc": 1435437089.0,
+        "distinguished": null, "mod_reports": [], "num_reports": null, "ups": 4}},
+        {"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by": null, "removal_reason":
+        null, "link_id": "t3_3batbp", "likes": null, "replies": "", "user_reports":
+        [], "saved": false, "id": "csksllv", "gilded": 0, "archived": false, "report_reasons":
+        null, "author": "caseystrain", "parent_id": "t1_cskl9jn", "score": 1, "approved_by":
+        null, "controversiality": 1, "body": "You must listen to nothing because almost
+        all bands do that.", "edited": false, "author_flair_css_class": null, "downs":
+        0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;You must listen to nothing
+        because almost all bands do that.&lt;/p&gt;\n&lt;/div&gt;", "subreddit": "listentothis",
+        "score_hidden": false, "name": "t1_csksllv", "created": 1435466596.0, "author_flair_text":
+        null, "created_utc": 1435437796.0, "distinguished": null, "mod_reports": [],
+        "num_reports": null, "ups": 1}}], "after": null, "before": null}}, "user_reports":
+        [], "saved": false, "id": "cskl9jn", "gilded": 0, "archived": false, "report_reasons":
+        null, "author": "phrostcope", "parent_id": "t3_3batbp", "score": 17, "approved_by":
+        null, "controversiality": 0, "body": "I was really into this band until I
+        realized the singer re-uses the same cadence in every song. Couldn''t get
+        over it.", "edited": false, "author_flair_css_class": null, "downs": 0, "body_html":
+        "&lt;div class=\"md\"&gt;&lt;p&gt;I was really into this band until I realized
+        the singer re-uses the same cadence in every song. Couldn&amp;#39;t get over
+        it.&lt;/p&gt;\n&lt;/div&gt;", "subreddit": "listentothis", "score_hidden":
+        false, "name": "t1_cskl9jn", "created": 1435426435.0, "author_flair_text":
+        null, "created_utc": 1435422835.0, "distinguished": null, "mod_reports": [],
+        "num_reports": null, "ups": 17}}, {"kind": "t1", "data": {"subreddit_id":
+        "t5_2qxzy", "banned_by": null, "removal_reason": null, "link_id": "t3_3batbp",
+        "likes": null, "replies": "", "user_reports": [], "saved": false, "id": "csktayp",
+        "gilded": 0, "archived": false, "report_reasons": null, "author": "achiychiy",
+        "parent_id": "t3_3batbp", "score": 3, "approved_by": null, "controversiality":
+        0, "body": "yeah this album, this band, awesome", "edited": false, "author_flair_css_class":
+        null, "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;yeah this
+        album, this band, awesome&lt;/p&gt;\n&lt;/div&gt;", "subreddit": "listentothis",
+        "score_hidden": false, "name": "t1_csktayp", "created": 1435442794.0, "author_flair_text":
+        null, "created_utc": 1435439194.0, "distinguished": null, "mod_reports": [],
+        "num_reports": null, "ups": 3}}, {"kind": "t1", "data": {"subreddit_id": "t5_2qxzy",
+        "banned_by": null, "removal_reason": null, "link_id": "t3_3batbp", "likes":
+        null, "replies": {"kind": "Listing", "data": {"modhash": "8z1e01zsiq6ba3e10f1fd2f82aa59d9d7fcc11ecd08ad41ab3",
+        "children": [{"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by":
+        null, "removal_reason": null, "link_id": "t3_3batbp", "likes": null, "replies":
+        "", "user_reports": [], "saved": false, "id": "cskvxtn", "gilded": 0, "archived":
+        false, "report_reasons": null, "author": "fatcheeseguy", "parent_id": "t1_cskri20",
+        "score": 3, "approved_by": null, "controversiality": 0, "body": "Yee. Foothill
+        and Northgate", "edited": false, "author_flair_css_class": null, "downs":
+        0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;Yee. Foothill and Northgate&lt;/p&gt;\n&lt;/div&gt;",
+        "subreddit": "listentothis", "score_hidden": false, "name": "t1_cskvxtn",
+        "created": 1435448186.0, "author_flair_text": null, "created_utc": 1435444586.0,
+        "distinguished": null, "mod_reports": [], "num_reports": null, "ups": 3}},
+        {"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by": null, "removal_reason":
+        null, "link_id": "t3_3batbp", "likes": null, "replies": "", "user_reports":
+        [], "saved": false, "id": "cslb99y", "gilded": 0, "archived": false, "report_reasons":
+        null, "author": "ScreamingWizard", "parent_id": "t1_cskri20", "score": 1,
+        "approved_by": null, "controversiality": 0, "body": "Went to college with
+        bassist. they rock!", "edited": false, "author_flair_css_class": null, "downs":
+        0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;Went to college with bassist.
+        they rock!&lt;/p&gt;\n&lt;/div&gt;", "subreddit": "listentothis", "score_hidden":
+        false, "name": "t1_cslb99y", "created": 1435491637.0, "author_flair_text":
+        null, "created_utc": 1435488037.0, "distinguished": null, "mod_reports": [],
+        "num_reports": null, "ups": 1}}], "after": null, "before": null}}, "user_reports":
+        [], "saved": false, "id": "cskri20", "gilded": 0, "archived": false, "report_reasons":
+        null, "author": "Shin0be", "parent_id": "t3_3batbp", "score": 5, "approved_by":
+        null, "controversiality": 0, "body": "Went to middle and high school with
+        these guys. They were mostly hella cool. ", "edited": false, "author_flair_css_class":
+        null, "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;Went to middle
+        and high school with these guys. They were mostly hella cool. &lt;/p&gt;\n&lt;/div&gt;",
+        "subreddit": "listentothis", "score_hidden": false, "name": "t1_cskri20",
+        "created": 1435439143.0, "author_flair_text": null, "created_utc": 1435435543.0,
+        "distinguished": null, "mod_reports": [], "num_reports": null, "ups": 5}},
+        {"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by": null, "removal_reason":
+        null, "link_id": "t3_3batbp", "likes": null, "replies": {"kind": "Listing",
+        "data": {"modhash": "8z1e01zsiq6ba3e10f1fd2f82aa59d9d7fcc11ecd08ad41ab3",
+        "children": [{"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by":
+        null, "removal_reason": null, "link_id": "t3_3batbp", "likes": null, "replies":
+        "", "user_reports": [], "saved": false, "id": "cskvz85", "gilded": 0, "archived":
+        false, "report_reasons": null, "author": "LethalPuppy", "parent_id": "t1_cskpxh5",
+        "score": 3, "approved_by": null, "controversiality": 0, "body": "You''re partly
+        right IMO. However, TSSF wouldn''t have blown up so hard if it hadn''t been
+        for The Wonder Years moving away from the EZ sound on The Upsides and Man
+        Overboard releasing Real Talk in 2010. Fans were hungry for more of this exciting
+        new tr00 pop punk sound, and The Story So Far delivered. TSSF may have killed
+        easycore, but TWY and MO beat it to a pulp and gave TSSF the gun to deliver
+        the final blow.", "edited": false, "author_flair_css_class": null, "downs":
+        0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;You&amp;#39;re partly right
+        IMO. However, TSSF wouldn&amp;#39;t have blown up so hard if it hadn&amp;#39;t
+        been for The Wonder Years moving away from the EZ sound on The Upsides and
+        Man Overboard releasing Real Talk in 2010. Fans were hungry for more of this
+        exciting new tr00 pop punk sound, and The Story So Far delivered. TSSF may
+        have killed easycore, but TWY and MO beat it to a pulp and gave TSSF the gun
+        to deliver the final blow.&lt;/p&gt;\n&lt;/div&gt;", "subreddit": "listentothis",
+        "score_hidden": false, "name": "t1_cskvz85", "created": 1435448272.0, "author_flair_text":
+        null, "created_utc": 1435444672.0, "distinguished": null, "mod_reports": [],
+        "num_reports": null, "ups": 3}}], "after": null, "before": null}}, "user_reports":
+        [], "saved": false, "id": "cskpxh5", "gilded": 0, "archived": false, "report_reasons":
+        null, "author": "masnoslen", "parent_id": "t3_3batbp", "score": 5, "approved_by":
+        null, "controversiality": 0, "body": "Love these guys but I feel like since
+        under soil and dirt every fucking band tried so hard to be them. Nobody plays
+        that easycore sound that the old wonder years, four year strong, and bands
+        like with the punches played. I like both but tssf killed easycore.", "edited":
+        false, "author_flair_css_class": null, "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;Love
+        these guys but I feel like since under soil and dirt every fucking band tried
+        so hard to be them. Nobody plays that easycore sound that the old wonder years,
+        four year strong, and bands like with the punches played. I like both but
+        tssf killed easycore.&lt;/p&gt;\n&lt;/div&gt;", "subreddit": "listentothis",
+        "score_hidden": false, "name": "t1_cskpxh5", "created": 1435435885.0, "author_flair_text":
+        null, "created_utc": 1435432285.0, "distinguished": null, "mod_reports": [],
+        "num_reports": null, "ups": 5}}, {"kind": "t1", "data": {"subreddit_id": "t5_2qxzy",
+        "banned_by": null, "removal_reason": null, "link_id": "t3_3batbp", "likes":
+        null, "replies": "", "user_reports": [], "saved": false, "id": "cskxkj4",
+        "gilded": 0, "archived": false, "report_reasons": null, "author": "stedeschi182",
+        "parent_id": "t3_3batbp", "score": 2, "approved_by": null, "controversiality":
+        0, "body": " Huge blink-182 fan incase you couldn''t tell by the username,
+        started listening to The Story So Far a little while ago, fell in love instantly.
+        ", "edited": false, "author_flair_css_class": null, "downs": 0, "body_html":
+        "&lt;div class=\"md\"&gt;&lt;p&gt;Huge blink-182 fan incase you couldn&amp;#39;t
+        tell by the username, started listening to The Story So Far a little while
+        ago, fell in love instantly. &lt;/p&gt;\n&lt;/div&gt;", "subreddit": "listentothis",
+        "score_hidden": false, "name": "t1_cskxkj4", "created": 1435451557.0, "author_flair_text":
+        null, "created_utc": 1435447957.0, "distinguished": null, "mod_reports": [],
+        "num_reports": null, "ups": 2}}, {"kind": "t1", "data": {"subreddit_id": "t5_2qxzy",
+        "banned_by": null, "removal_reason": null, "link_id": "t3_3batbp", "likes":
+        null, "replies": {"kind": "Listing", "data": {"modhash": "8z1e01zsiq6ba3e10f1fd2f82aa59d9d7fcc11ecd08ad41ab3",
+        "children": [{"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by":
+        null, "removal_reason": null, "link_id": "t3_3batbp", "likes": null, "replies":
+        {"kind": "Listing", "data": {"modhash": "8z1e01zsiq6ba3e10f1fd2f82aa59d9d7fcc11ecd08ad41ab3",
+        "children": [{"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by":
+        null, "removal_reason": null, "link_id": "t3_3batbp", "likes": null, "replies":
+        {"kind": "Listing", "data": {"modhash": "8z1e01zsiq6ba3e10f1fd2f82aa59d9d7fcc11ecd08ad41ab3",
+        "children": [{"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by":
+        null, "removal_reason": null, "link_id": "t3_3batbp", "likes": null, "replies":
+        "", "user_reports": [], "saved": false, "id": "cskjp2i", "gilded": 0, "archived":
+        false, "report_reasons": null, "author": "PM_ME_4_COKE_HOOKUP", "parent_id":
+        "t1_cskjn8c", "score": 6, "approved_by": null, "controversiality": 1, "body":
+        "Oh. Well I''m an extremely underrated person next to Barack Obama", "edited":
+        false, "author_flair_css_class": null, "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;Oh.
+        Well I&amp;#39;m an extremely underrated person next to Barack Obama&lt;/p&gt;\n&lt;/div&gt;",
+        "subreddit": "listentothis", "score_hidden": false, "name": "t1_cskjp2i",
+        "created": 1435448410.0, "author_flair_text": null, "created_utc": 1435419610.0,
+        "distinguished": null, "mod_reports": [], "num_reports": null, "ups": 6}}],
+        "after": null, "before": null}}, "user_reports": [], "saved": false, "id":
+        "cskjn8c", "gilded": 0, "archived": false, "report_reasons": null, "author":
+        "michaelflip", "parent_id": "t1_cskje6k", "score": 3, "approved_by": null,
+        "controversiality": 0, "body": "He probably meant in general compared to say,
+        U2.", "edited": false, "author_flair_css_class": null, "downs": 0, "body_html":
+        "&lt;div class=\"md\"&gt;&lt;p&gt;He probably meant in general compared to
+        say, U2.&lt;/p&gt;\n&lt;/div&gt;", "subreddit": "listentothis", "score_hidden":
+        false, "name": "t1_cskjn8c", "created": 1435423105.0, "author_flair_text":
+        null, "created_utc": 1435419505.0, "distinguished": null, "mod_reports": [],
+        "num_reports": null, "ups": 3}}, {"kind": "t1", "data": {"subreddit_id": "t5_2qxzy",
+        "banned_by": null, "removal_reason": null, "link_id": "t3_3batbp", "likes":
+        null, "replies": {"kind": "Listing", "data": {"modhash": "8z1e01zsiq6ba3e10f1fd2f82aa59d9d7fcc11ecd08ad41ab3",
+        "children": [{"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by":
+        null, "removal_reason": null, "link_id": "t3_3batbp", "likes": null, "replies":
+        "", "user_reports": [], "saved": false, "id": "csklnrs", "gilded": 0, "archived":
+        false, "report_reasons": null, "author": "PM_ME_4_COKE_HOOKUP", "parent_id":
+        "t1_cskjvu9", "score": 2, "approved_by": null, "controversiality": 0, "body":
+        "Do you live under a rock", "edited": false, "author_flair_css_class": null,
+        "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;Do you live under
+        a rock&lt;/p&gt;\n&lt;/div&gt;", "subreddit": "listentothis", "score_hidden":
+        false, "name": "t1_csklnrs", "created": 1435427222.0, "author_flair_text":
+        null, "created_utc": 1435423622.0, "distinguished": null, "mod_reports": [],
+        "num_reports": null, "ups": 2}}, {"kind": "t1", "data": {"subreddit_id": "t5_2qxzy",
+        "banned_by": null, "removal_reason": null, "link_id": "t3_3batbp", "likes":
+        null, "replies": {"kind": "Listing", "data": {"modhash": "8z1e01zsiq6ba3e10f1fd2f82aa59d9d7fcc11ecd08ad41ab3",
+        "children": [{"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by":
+        null, "removal_reason": null, "link_id": "t3_3batbp", "likes": null, "replies":
+        "", "user_reports": [], "saved": false, "id": "cskkeqv", "gilded": 0, "archived":
+        false, "report_reasons": null, "author": "Quicherbitchen", "parent_id": "t1_cskkca8",
+        "score": 6, "approved_by": null, "controversiality": 0, "body": "Well you''re
+        a cotten headed ninny muggins", "edited": false, "author_flair_css_class":
+        null, "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;Well you&amp;#39;re
+        a cotten headed ninny muggins&lt;/p&gt;\n&lt;/div&gt;", "subreddit": "listentothis",
+        "score_hidden": false, "name": "t1_cskkeqv", "created": 1435424702.0, "author_flair_text":
+        null, "created_utc": 1435421102.0, "distinguished": null, "mod_reports": [],
+        "num_reports": null, "ups": 6}}], "after": null, "before": null}}, "user_reports":
+        [], "saved": false, "id": "cskkca8", "gilded": 0, "archived": false, "report_reasons":
+        null, "author": "bojank33", "parent_id": "t1_cskjvu9", "score": 2, "approved_by":
+        null, "controversiality": 1, "body": "Lol. They are the hottest band in pop
+        punk right now and have been since Under Soil and Dirt came out. They were
+        and still are a word of mouth juggernaut, if anything I''d say they''re overrated.",
+        "edited": 1435428935.0, "author_flair_css_class": null, "downs": 0, "body_html":
+        "&lt;div class=\"md\"&gt;&lt;p&gt;Lol. They are the hottest band in pop punk
+        right now and have been since Under Soil and Dirt came out. They were and
+        still are a word of mouth juggernaut, if anything I&amp;#39;d say they&amp;#39;re
+        overrated.&lt;/p&gt;\n&lt;/div&gt;", "subreddit": "listentothis", "score_hidden":
+        false, "name": "t1_cskkca8", "created": 1435424559.0, "author_flair_text":
+        null, "created_utc": 1435420959.0, "distinguished": null, "mod_reports": [],
+        "num_reports": null, "ups": 2}}], "after": null, "before": null}}, "user_reports":
+        [], "saved": false, "id": "cskjvu9", "gilded": 0, "archived": false, "report_reasons":
+        null, "author": "Quicherbitchen", "parent_id": "t1_cskje6k", "score": 3, "approved_by":
+        null, "controversiality": 0, "body": "I think most people dont discover them
+        until they go to a newfound glory show, or any other band that would headline
+        for This story so far. They obviously dont get much exposure other than their
+        shows. ", "edited": false, "author_flair_css_class": null, "downs": 0, "body_html":
+        "&lt;div class=\"md\"&gt;&lt;p&gt;I think most people dont discover them until
+        they go to a newfound glory show, or any other band that would headline for
+        This story so far. They obviously dont get much exposure other than their
+        shows. &lt;/p&gt;\n&lt;/div&gt;", "subreddit": "listentothis", "score_hidden":
+        false, "name": "t1_cskjvu9", "created": 1435423607.0, "author_flair_text":
+        null, "created_utc": 1435420007.0, "distinguished": null, "mod_reports": [],
+        "num_reports": null, "ups": 3}}], "after": null, "before": null}}, "user_reports":
+        [], "saved": false, "id": "cskje6k", "gilded": 0, "archived": false, "report_reasons":
+        null, "author": "PM_ME_4_COKE_HOOKUP", "parent_id": "t1_cskir43", "score":
+        20, "approved_by": null, "controversiality": 0, "body": "Lmaooo they''re probably
+        the biggest band in the genre next to the wonder years and they tour with
+        new found glory how are you figuring they are ''underrated''", "edited": false,
+        "author_flair_css_class": null, "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;Lmaooo
+        they&amp;#39;re probably the biggest band in the genre next to the wonder
+        years and they tour with new found glory how are you figuring they are &amp;#39;underrated&amp;#39;&lt;/p&gt;\n&lt;/div&gt;",
+        "subreddit": "listentothis", "score_hidden": false, "name": "t1_cskje6k",
+        "created": 1435422570.0, "author_flair_text": null, "created_utc": 1435418970.0,
+        "distinguished": null, "mod_reports": [], "num_reports": null, "ups": 20}},
+        {"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by": null, "removal_reason":
+        null, "link_id": "t3_3batbp", "likes": null, "replies": "", "user_reports":
+        [], "saved": false, "id": "cskm6ts", "gilded": 0, "archived": false, "report_reasons":
+        null, "author": "pbnov", "parent_id": "t1_cskir43", "score": 2, "approved_by":
+        null, "controversiality": 0, "body": "Not underrated in /r/poppunkers. They
+        are well respected there.", "edited": false, "author_flair_css_class": null,
+        "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;Not underrated
+        in &lt;a href=\"/r/poppunkers\"&gt;/r/poppunkers&lt;/a&gt;. They are well
+        respected there.&lt;/p&gt;\n&lt;/div&gt;", "subreddit": "listentothis", "score_hidden":
+        false, "name": "t1_cskm6ts", "created": 1435428287.0, "author_flair_text":
+        null, "created_utc": 1435424687.0, "distinguished": null, "mod_reports": [],
+        "num_reports": null, "ups": 2}}, {"kind": "t1", "data": {"subreddit_id": "t5_2qxzy",
+        "banned_by": null, "removal_reason": null, "link_id": "t3_3batbp", "likes":
+        null, "replies": {"kind": "Listing", "data": {"modhash": "8z1e01zsiq6ba3e10f1fd2f82aa59d9d7fcc11ecd08ad41ab3",
+        "children": [{"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by":
+        null, "removal_reason": null, "link_id": "t3_3batbp", "likes": null, "replies":
+        "", "user_reports": [], "saved": false, "id": "csl1hud", "gilded": 0, "archived":
+        false, "report_reasons": null, "author": "trynagetrich", "parent_id": "t1_cskxey3",
+        "score": 0, "approved_by": null, "controversiality": 0, "body": "TSSF is pretty
+        accessible compared to TF and B&amp;C. Not diminishing their talent, but TSSF
+        is more traditional punk comparatively. TF and B&amp;C have really found their
+        own sound in the large melting pot that is punk rock. Plus Parker Cannon''s
+        voice is a little more \"radio friendly\", for lack of better term, than Ned
+        Russin''s or Jon Simmons''.", "edited": false, "author_flair_css_class": "bandcamp",
+        "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;TSSF is pretty
+        accessible compared to TF and B&amp;amp;C. Not diminishing their talent, but
+        TSSF is more traditional punk comparatively. TF and B&amp;amp;C have really
+        found their own sound in the large melting pot that is punk rock. Plus Parker
+        Cannon&amp;#39;s voice is a little more &amp;quot;radio friendly&amp;quot;,
+        for lack of better term, than Ned Russin&amp;#39;s or Jon Simmons&amp;#39;.&lt;/p&gt;\n&lt;/div&gt;",
+        "subreddit": "listentothis", "score_hidden": false, "name": "t1_csl1hud",
+        "created": 1435460274.0, "author_flair_text": "bandcamp", "created_utc": 1435456674.0,
+        "distinguished": null, "mod_reports": [], "num_reports": null, "ups": 0}}],
+        "after": null, "before": null}}, "user_reports": [], "saved": false, "id":
+        "cskxey3", "gilded": 0, "archived": false, "report_reasons": null, "author":
+        "KennyTarpon", "parent_id": "t1_cskir43", "score": 2, "approved_by": null,
+        "controversiality": 0, "body": "They really are bigger than people think,
+        I can''t believe they have several songs on spotify that have over a million
+        listens. Title fight and balance don''t even have that. ", "edited": false,
+        "author_flair_css_class": null, "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;They
+        really are bigger than people think, I can&amp;#39;t believe they have several
+        songs on spotify that have over a million listens. Title fight and balance
+        don&amp;#39;t even have that. &lt;/p&gt;\n&lt;/div&gt;", "subreddit": "listentothis",
+        "score_hidden": false, "name": "t1_cskxey3", "created": 1435451238.0, "author_flair_text":
+        null, "created_utc": 1435447638.0, "distinguished": null, "mod_reports": [],
+        "num_reports": null, "ups": 2}}, {"kind": "t1", "data": {"subreddit_id": "t5_2qxzy",
+        "banned_by": null, "removal_reason": null, "link_id": "t3_3batbp", "likes":
+        null, "replies": "", "user_reports": [], "saved": false, "id": "csl1j96",
+        "gilded": 0, "archived": false, "report_reasons": null, "author": "trynagetrich",
+        "parent_id": "t1_cskir43", "score": 2, "approved_by": null, "controversiality":
+        0, "body": "Underrated when it comes to mainstream music, not underrated when
+        it comes to punk rock. They have almost 100,000 listeners on last.fm alone.",
+        "edited": false, "author_flair_css_class": "bandcamp", "downs": 0, "body_html":
+        "&lt;div class=\"md\"&gt;&lt;p&gt;Underrated when it comes to mainstream music,
+        not underrated when it comes to punk rock. They have almost 100,000 listeners
+        on last.fm alone.&lt;/p&gt;\n&lt;/div&gt;", "subreddit": "listentothis", "score_hidden":
+        false, "name": "t1_csl1j96", "created": 1435460365.0, "author_flair_text":
+        "bandcamp", "created_utc": 1435456765.0, "distinguished": null, "mod_reports":
+        [], "num_reports": null, "ups": 2}}], "after": null, "before": null}}, "user_reports":
+        [], "saved": false, "id": "cskir43", "gilded": 0, "archived": false, "report_reasons":
+        null, "author": "Quicherbitchen", "parent_id": "t3_3batbp", "score": 3, "approved_by":
+        null, "controversiality": 1, "body": "Love this! Extremely underrated band.
+        Its Great to see them on here.", "edited": false, "author_flair_css_class":
+        null, "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;Love this!
+        Extremely underrated band. Its Great to see them on here.&lt;/p&gt;\n&lt;/div&gt;",
+        "subreddit": "listentothis", "score_hidden": false, "name": "t1_cskir43",
+        "created": 1435421176.0, "author_flair_text": null, "created_utc": 1435417576.0,
+        "distinguished": null, "mod_reports": [], "num_reports": null, "ups": 3}},
+        {"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by": null, "removal_reason":
+        null, "link_id": "t3_3batbp", "likes": null, "replies": "", "user_reports":
+        [], "saved": false, "id": "cskoqic", "gilded": 0, "archived": false, "report_reasons":
+        null, "author": "LagrangePint", "parent_id": "t3_3batbp", "score": 1, "approved_by":
+        null, "controversiality": 0, "body": "I feel kind of Blink 183ish about this.",
+        "edited": false, "author_flair_css_class": null, "downs": 0, "body_html":
+        "&lt;div class=\"md\"&gt;&lt;p&gt;I feel kind of Blink 183ish about this.&lt;/p&gt;\n&lt;/div&gt;",
+        "subreddit": "listentothis", "score_hidden": false, "name": "t1_cskoqic",
+        "created": 1435433436.0, "author_flair_text": null, "created_utc": 1435429836.0,
+        "distinguished": null, "mod_reports": [], "num_reports": null, "ups": 1}},
+        {"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by": null, "removal_reason":
+        null, "link_id": "t3_3batbp", "likes": null, "replies": "", "user_reports":
+        [], "saved": false, "id": "cskpflo", "gilded": 0, "archived": false, "report_reasons":
+        null, "author": "Zeelots", "parent_id": "t3_3batbp", "score": 1, "approved_by":
+        null, "controversiality": 0, "body": "Awesome band. Met them downtown in St.
+        Louis, MO and they were cool as fuck ", "edited": false, "author_flair_css_class":
+        null, "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;Awesome band.
+        Met them downtown in St. Louis, MO and they were cool as fuck &lt;/p&gt;\n&lt;/div&gt;",
+        "subreddit": "listentothis", "score_hidden": false, "name": "t1_cskpflo",
+        "created": 1435434858.0, "author_flair_text": null, "created_utc": 1435431258.0,
+        "distinguished": null, "mod_reports": [], "num_reports": null, "ups": 1}},
+        {"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by": null, "removal_reason":
+        null, "link_id": "t3_3batbp", "likes": null, "replies": "", "user_reports":
+        [], "saved": false, "id": "cskq8nf", "gilded": 0, "archived": false, "report_reasons":
+        null, "author": "juiceboxOG", "parent_id": "t3_3batbp", "score": 1, "approved_by":
+        null, "controversiality": 0, "body": "hell yeah! their new record is killer",
+        "edited": false, "author_flair_css_class": null, "downs": 0, "body_html":
+        "&lt;div class=\"md\"&gt;&lt;p&gt;hell yeah! their new record is killer&lt;/p&gt;\n&lt;/div&gt;",
+        "subreddit": "listentothis", "score_hidden": false, "name": "t1_cskq8nf",
+        "created": 1435436517.0, "author_flair_text": null, "created_utc": 1435432917.0,
+        "distinguished": null, "mod_reports": [], "num_reports": null, "ups": 1}},
+        {"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by": null, "removal_reason":
+        null, "link_id": "t3_3batbp", "likes": null, "replies": "", "user_reports":
+        [], "saved": false, "id": "cskz289", "gilded": 0, "archived": false, "report_reasons":
+        null, "author": "Joao_Bridge", "parent_id": "t3_3batbp", "score": 1, "approved_by":
+        null, "controversiality": 0, "body": "Great fucking song. Parker''s stage
+        presence is also killer. Great band.", "edited": false, "author_flair_css_class":
+        null, "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;Great fucking
+        song. Parker&amp;#39;s stage presence is also killer. Great band.&lt;/p&gt;\n&lt;/div&gt;",
+        "subreddit": "listentothis", "score_hidden": false, "name": "t1_cskz289",
+        "created": 1435454725.0, "author_flair_text": null, "created_utc": 1435451125.0,
+        "distinguished": null, "mod_reports": [], "num_reports": null, "ups": 1}},
+        {"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by": null, "removal_reason":
+        null, "link_id": "t3_3batbp", "likes": null, "replies": "", "user_reports":
+        [], "saved": false, "id": "csl1b0o", "gilded": 0, "archived": false, "report_reasons":
+        null, "author": "trynagetrich", "parent_id": "t3_3batbp", "score": 1, "approved_by":
+        null, "controversiality": 0, "body": "Heya there, high school, I wasn''t expecting
+        to see you today.", "edited": false, "author_flair_css_class": "bandcamp",
+        "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;Heya there, high
+        school, I wasn&amp;#39;t expecting to see you today.&lt;/p&gt;\n&lt;/div&gt;",
+        "subreddit": "listentothis", "score_hidden": false, "name": "t1_csl1b0o",
+        "created": 1435459826.0, "author_flair_text": "bandcamp", "created_utc": 1435456226.0,
+        "distinguished": null, "mod_reports": [], "num_reports": null, "ups": 1}},
+        {"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by": null, "removal_reason":
+        null, "link_id": "t3_3batbp", "likes": null, "replies": "", "user_reports":
+        [], "saved": false, "id": "csl9pna", "gilded": 0, "archived": false, "report_reasons":
+        null, "author": "Letstalktoit", "parent_id": "t3_3batbp", "score": 1, "approved_by":
+        null, "controversiality": 0, "body": "I think I still listen to this song
+        almost daily, and it came out how many years ago? Great tune for sure. ",
+        "edited": false, "author_flair_css_class": null, "downs": 0, "body_html":
+        "&lt;div class=\"md\"&gt;&lt;p&gt;I think I still listen to this song almost
+        daily, and it came out how many years ago? Great tune for sure. &lt;/p&gt;\n&lt;/div&gt;",
+        "subreddit": "listentothis", "score_hidden": false, "name": "t1_csl9pna",
+        "created": 1435483899.0, "author_flair_text": null, "created_utc": 1435480299.0,
+        "distinguished": null, "mod_reports": [], "num_reports": null, "ups": 1}},
+        {"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by": null, "removal_reason":
+        null, "link_id": "t3_3batbp", "likes": null, "replies": {"kind": "Listing",
+        "data": {"modhash": "8z1e01zsiq6ba3e10f1fd2f82aa59d9d7fcc11ecd08ad41ab3",
+        "children": [{"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by":
+        null, "removal_reason": null, "link_id": "t3_3batbp", "likes": null, "replies":
+        "", "user_reports": [], "saved": false, "id": "csl0hqm", "gilded": 0, "archived":
+        false, "report_reasons": null, "author": "Picnicpanther", "parent_id": "t1_cskugph",
+        "score": 5, "approved_by": null, "controversiality": 0, "body": "Man Overboard?
+        Talented? No.  They might make some catchy songs, but their guitar work is
+        bland, their lyrics are derivative and unimaginative, and their singer is
+        subpar. They''re like a worse NFG ripoff. ", "edited": false, "author_flair_css_class":
+        "spotify", "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;Man
+        Overboard? Talented? No.  They might make some catchy songs, but their guitar
+        work is bland, their lyrics are derivative and unimaginative, and their singer
+        is subpar. They&amp;#39;re like a worse NFG ripoff. &lt;/p&gt;\n&lt;/div&gt;",
+        "subreddit": "listentothis", "score_hidden": false, "name": "t1_csl0hqm",
+        "created": 1435457964.0, "author_flair_text": "spotify", "created_utc": 1435454364.0,
+        "distinguished": null, "mod_reports": [], "num_reports": null, "ups": 5}}],
+        "after": null, "before": null}}, "user_reports": [], "saved": false, "id":
+        "cskugph", "gilded": 0, "archived": false, "report_reasons": null, "author":
+        "Adamc1012", "parent_id": "t3_3batbp", "score": 1, "approved_by": null, "controversiality":
+        0, "body": "Man Overboard is releasing their new album in a couple days and
+        they''re going on tour with the story so far in a couple months.  Both bands
+        are very talented.  They''re definitely worth a listen. ", "edited": false,
+        "author_flair_css_class": null, "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;Man
+        Overboard is releasing their new album in a couple days and they&amp;#39;re
+        going on tour with the story so far in a couple months.  Both bands are very
+        talented.  They&amp;#39;re definitely worth a listen. &lt;/p&gt;\n&lt;/div&gt;",
+        "subreddit": "listentothis", "score_hidden": false, "name": "t1_cskugph",
+        "created": 1435445155.0, "author_flair_text": null, "created_utc": 1435441555.0,
+        "distinguished": null, "mod_reports": [], "num_reports": null, "ups": 1}},
+        {"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by": null, "removal_reason":
+        null, "link_id": "t3_3batbp", "likes": null, "replies": "", "user_reports":
+        [], "saved": false, "id": "cskk3gn", "gilded": 0, "archived": false, "report_reasons":
+        null, "author": "XxRingMaster", "parent_id": "t3_3batbp", "score": 1, "approved_by":
+        null, "controversiality": 0, "body": "This is one if my favorite songs. Glad
+        to see it on here!", "edited": false, "author_flair_css_class": null, "downs":
+        0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;This is one if my favorite
+        songs. Glad to see it on here!&lt;/p&gt;\n&lt;/div&gt;", "subreddit": "listentothis",
+        "score_hidden": false, "name": "t1_cskk3gn", "created": 1435424052.0, "author_flair_text":
+        null, "created_utc": 1435420452.0, "distinguished": null, "mod_reports": [],
+        "num_reports": null, "ups": 1}}, {"kind": "t1", "data": {"subreddit_id": "t5_2qxzy",
+        "banned_by": null, "removal_reason": null, "link_id": "t3_3batbp", "likes":
+        null, "replies": "", "user_reports": [], "saved": false, "id": "cskuv5u",
+        "gilded": 0, "archived": false, "report_reasons": null, "author": "TheVicSageQuestion",
+        "parent_id": "t3_3batbp", "score": 1, "approved_by": null, "controversiality":
+        0, "body": "And everything else is irrelevant to the story so far...", "edited":
+        false, "author_flair_css_class": null, "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;And
+        everything else is irrelevant to the story so far...&lt;/p&gt;\n&lt;/div&gt;",
+        "subreddit": "listentothis", "score_hidden": false, "name": "t1_cskuv5u",
+        "created": 1435445985.0, "author_flair_text": null, "created_utc": 1435442385.0,
+        "distinguished": null, "mod_reports": [], "num_reports": null, "ups": 1}},
+        {"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by": null, "removal_reason":
+        null, "link_id": "t3_3batbp", "likes": null, "replies": {"kind": "Listing",
+        "data": {"modhash": "8z1e01zsiq6ba3e10f1fd2f82aa59d9d7fcc11ecd08ad41ab3",
+        "children": [{"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by":
+        null, "removal_reason": null, "link_id": "t3_3batbp", "likes": null, "replies":
+        "", "user_reports": [], "saved": false, "id": "csl1m0c", "gilded": 0, "archived":
+        false, "report_reasons": null, "author": "trynagetrich", "parent_id": "t1_cskxfyi",
+        "score": 3, "approved_by": null, "controversiality": 0, "body": "That''s what
+        you get for tattooing pop punk lyrics on your body, much less your wrist.",
+        "edited": false, "author_flair_css_class": "bandcamp", "downs": 0, "body_html":
+        "&lt;div class=\"md\"&gt;&lt;p&gt;That&amp;#39;s what you get for tattooing
+        pop punk lyrics on your body, much less your wrist.&lt;/p&gt;\n&lt;/div&gt;",
+        "subreddit": "listentothis", "score_hidden": false, "name": "t1_csl1m0c",
+        "created": 1435460543.0, "author_flair_text": "bandcamp", "created_utc": 1435456943.0,
+        "distinguished": null, "mod_reports": [], "num_reports": null, "ups": 3}},
+        {"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by": null, "removal_reason":
+        null, "link_id": "t3_3batbp", "likes": null, "replies": "", "user_reports":
+        [], "saved": false, "id": "cskyokb", "gilded": 0, "archived": false, "report_reasons":
+        null, "author": "brettikus", "parent_id": "t1_cskxfyi", "score": 2, "approved_by":
+        null, "controversiality": 0, "body": "You do realize you''re every bit as
+        much as a fan boy/girl right?\n", "edited": false, "author_flair_css_class":
+        null, "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;You do realize
+        you&amp;#39;re every bit as much as a fan boy/girl right?&lt;/p&gt;\n&lt;/div&gt;",
+        "subreddit": "listentothis", "score_hidden": false, "name": "t1_cskyokb",
+        "created": 1435453908.0, "author_flair_text": null, "created_utc": 1435450308.0,
+        "distinguished": null, "mod_reports": [], "num_reports": null, "ups": 2}},
+        {"kind": "t1", "data": {"subreddit_id": "t5_2qxzy", "banned_by": null, "removal_reason":
+        null, "link_id": "t3_3batbp", "likes": null, "replies": "", "user_reports":
+        [], "saved": false, "id": "cskxgl2", "gilded": 0, "archived": false, "report_reasons":
+        null, "author": "Xo_tilwe_oD", "parent_id": "t1_cskxfyi", "score": 1, "approved_by":
+        null, "controversiality": 0, "body": "Edit: *Tumblr.", "edited": false, "author_flair_css_class":
+        null, "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;Edit: *Tumblr.&lt;/p&gt;\n&lt;/div&gt;",
+        "subreddit": "listentothis", "score_hidden": false, "name": "t1_cskxgl2",
+        "created": 1435451333.0, "author_flair_text": null, "created_utc": 1435447733.0,
+        "distinguished": null, "mod_reports": [], "num_reports": null, "ups": 1}}],
+        "after": null, "before": null}}, "user_reports": [], "saved": false, "id":
+        "cskxfyi", "gilded": 0, "archived": false, "report_reasons": null, "author":
+        "Xo_tilwe_oD", "parent_id": "t3_3batbp", "score": 0, "approved_by": null,
+        "controversiality": 0, "body": "Got this bands lyrics tattooed on my wrists
+        3 years ago. Girl from my town gets same exact tattoo on the side of her hands.
+        Go on tumble. Some girl from another state gets same tattoo as mine in the
+        same font and placement. Too many fan girls. Want to kill myself now", "edited":
+        false, "author_flair_css_class": null, "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;Got
+        this bands lyrics tattooed on my wrists 3 years ago. Girl from my town gets
+        same exact tattoo on the side of her hands. Go on tumble. Some girl from another
+        state gets same tattoo as mine in the same font and placement. Too many fan
+        girls. Want to kill myself now&lt;/p&gt;\n&lt;/div&gt;", "subreddit": "listentothis",
+        "score_hidden": false, "name": "t1_cskxfyi", "created": 1435451298.0, "author_flair_text":
+        null, "created_utc": 1435447698.0, "distinguished": null, "mod_reports": [],
+        "num_reports": null, "ups": 0}}], "after": null, "before": null}}]'
+    http_version: 
+  recorded_at: Tue, 30 Jun 2015 03:20:56 GMT
+recorded_with: VCR 2.9.3
