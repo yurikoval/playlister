@@ -8,7 +8,9 @@ class Playlist
 
   def self.find_by_id(playlist_id)
     playlist = new()
-    playlist.instance_variable_set(:@playlist, Yt::Playlist.new(id: playlist_id, auth: playlist.send(:account)))
+    yt_playlist = Yt::Playlist.new(id: playlist_id, auth: playlist.send(:account))
+    raise "No Such Playlist" unless yt_playlist.title
+    playlist.instance_variable_set(:@playlist, yt_playlist)
     playlist
   end
 
@@ -21,7 +23,7 @@ class Playlist
   end
 
   def id
-    account.id
+    playlist.id
   end
 
   private
