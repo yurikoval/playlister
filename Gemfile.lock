@@ -76,6 +76,8 @@ GEM
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
     yard (0.8.7.6)
+    yt (0.25.0)
+      activesupport
 
 PLATFORMS
   ruby
@@ -90,3 +92,4 @@ DEPENDENCIES
   rspec
   vcr
   webmock
+  yt

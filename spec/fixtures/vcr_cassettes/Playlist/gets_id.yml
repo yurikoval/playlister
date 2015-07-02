@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/oauth2/v2/userinfo?key=<YT_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      User-Agent:
+      - Yt::Request (gzip)
+      Authorization:
+      - Bearer <YOUTUBE_ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Date:
+      - Thu, 02 Jul 2015 13:21:26 GMT
+      Vary:
+      - Origin,Accept-Encoding
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=1
+      Accept-Ranges:
+      - none
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "id": "115790085790434106631",
+         "email": "yuri.koval@gmail.com",
+         "verified_email": true,
+         "name": "Yuri Koval'ov",
+         "given_name": "Yuri",
+         "family_name": "Koval'ov",
+         "link": "https://plus.google.com/+YuriKovalov",
+         "picture": "https://lh5.googleusercontent.com/-iultNzRwxBY/AAAAAAAAAAI/AAAAAAAABEo/ukWdtBTzJoM/photo.jpg"
+        }
+    http_version: 
+  recorded_at: Thu, 02 Jul 2015 13:21:26 GMT
+recorded_with: VCR 2.9.3

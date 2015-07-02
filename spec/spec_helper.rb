@@ -10,8 +10,15 @@ VCR.configure do |c|
   }
   c.ignore_localhost = true
   c.configure_rspec_metadata!
-  c.filter_sensitive_data('<REDDIT_USERNAME>') { ENV['REDDIT_USERNAME'] }
-  c.filter_sensitive_data('<REDDIT_PASSWORD>') { ENV['REDDIT_PASSWORD'] }
+  %w[
+      REDDIT_USERNAME
+      REDDIT_PASSWORD
+      YOUTUBE_AUTHORIZATION_CODE
+      YOUTUBE_ACCESS_TOKEN
+      YT_API_KEY
+  ].each do |parameter|
+    c.filter_sensitive_data("<#{parameter}>") { ENV[parameter] }
+  end
 end
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|

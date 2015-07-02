@@ -3,6 +3,7 @@ source "https://rubygems.org"
 
 gem 'activesupport'
 gem 'redditkit'
+gem 'yt'
 gem 'dotenv'
 group :development do
   gem 'rspec'
