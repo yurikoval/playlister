@@ -1,0 +1,233 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/playlistItems?key=<YT_API_KEY>&maxResults=50&part=snippet,status&playlistId=PLcQuLA5Ps-q5ceV_jIX5p9bL8X7zm2A0C
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      User-Agent:
+      - Yt::Request (gzip)
+      Authorization:
+      - Bearer <YOUTUBE_ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 02 Jul 2015 14:05:51 GMT
+      Date:
+      - Thu, 02 Jul 2015 14:05:51 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"Y3xTLFF3RLtHXX85JBgzzgp2Enw/yJlMsxPoDjjd2lrZ7WBdey5mqEY"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '5049'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=1
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "youtube#playlistItemListResponse",
+         "etag": "\"Y3xTLFF3RLtHXX85JBgzzgp2Enw/yJlMsxPoDjjd2lrZ7WBdey5mqEY\"",
+         "pageInfo": {
+          "totalResults": 4,
+          "resultsPerPage": 50
+         },
+         "items": [
+          {
+           "kind": "youtube#playlistItem",
+           "etag": "\"Y3xTLFF3RLtHXX85JBgzzgp2Enw/zR1jaFgC--PePu8X54xukHDOD0o\"",
+           "id": "PL6d1wTE0FZeCWM5kTs_K13GNWIuc5gDrLShcBl3gmbhA",
+           "snippet": {
+            "publishedAt": "2015-07-02T13:51:07.000Z",
+            "channelId": "UC0gH1TcTcXyHAt6Q4eaaEdw",
+            "title": "The Story So Far - \"Quicksand\"",
+            "description": "http://itunes.apple.com/us/album/under-soil-and-dirt/id443503421",
+            "thumbnails": {
+             "default": {
+              "url": "https://i.ytimg.com/vi/h3L-xm7bs34/default.jpg",
+              "width": 120,
+              "height": 90
+             },
+             "medium": {
+              "url": "https://i.ytimg.com/vi/h3L-xm7bs34/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             },
+             "high": {
+              "url": "https://i.ytimg.com/vi/h3L-xm7bs34/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+             },
+             "standard": {
+              "url": "https://i.ytimg.com/vi/h3L-xm7bs34/sddefault.jpg",
+              "width": 640,
+              "height": 480
+             }
+            },
+            "channelTitle": "Yuri Koval'ov",
+            "playlistId": "PLcQuLA5Ps-q5ceV_jIX5p9bL8X7zm2A0C",
+            "position": 0,
+            "resourceId": {
+             "kind": "youtube#video",
+             "videoId": "h3L-xm7bs34"
+            }
+           },
+           "status": {
+            "privacyStatus": "public"
+           }
+          },
+          {
+           "kind": "youtube#playlistItem",
+           "etag": "\"Y3xTLFF3RLtHXX85JBgzzgp2Enw/8I9WuiRS2heFLsK5HxIFOViO33A\"",
+           "id": "PL6d1wTE0FZeCWM5kTs_K13CQh-lVZh3Ji-kwE_GvHs5g",
+           "snippet": {
+            "publishedAt": "2015-07-02T13:51:08.000Z",
+            "channelId": "UC0gH1TcTcXyHAt6Q4eaaEdw",
+            "title": "The Story So Far - 680 South",
+            "description": "",
+            "thumbnails": {
+             "default": {
+              "url": "https://i.ytimg.com/vi/6DlYETRuZuQ/default.jpg",
+              "width": 120,
+              "height": 90
+             },
+             "medium": {
+              "url": "https://i.ytimg.com/vi/6DlYETRuZuQ/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             },
+             "high": {
+              "url": "https://i.ytimg.com/vi/6DlYETRuZuQ/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+             }
+            },
+            "channelTitle": "Yuri Koval'ov",
+            "playlistId": "PLcQuLA5Ps-q5ceV_jIX5p9bL8X7zm2A0C",
+            "position": 1,
+            "resourceId": {
+             "kind": "youtube#video",
+             "videoId": "6DlYETRuZuQ"
+            }
+           },
+           "status": {
+            "privacyStatus": "public"
+           }
+          },
+          {
+           "kind": "youtube#playlistItem",
+           "etag": "\"Y3xTLFF3RLtHXX85JBgzzgp2Enw/-TAK8FcRZ81HyIlX_-XgSCkn2Zo\"",
+           "id": "PL6d1wTE0FZeCWM5kTs_K13EkZXXHZs74SYag9q-7Dnxc",
+           "snippet": {
+            "publishedAt": "2015-07-02T13:51:09.000Z",
+            "channelId": "UC0gH1TcTcXyHAt6Q4eaaEdw",
+            "title": "The Story So Far - Closure",
+            "description": "http://itunes.apple.com/us/album/under-soil-and-dirt/id443503421",
+            "thumbnails": {
+             "default": {
+              "url": "https://i.ytimg.com/vi/zGeBffMzxPs/default.jpg",
+              "width": 120,
+              "height": 90
+             },
+             "medium": {
+              "url": "https://i.ytimg.com/vi/zGeBffMzxPs/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             },
+             "high": {
+              "url": "https://i.ytimg.com/vi/zGeBffMzxPs/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+             },
+             "standard": {
+              "url": "https://i.ytimg.com/vi/zGeBffMzxPs/sddefault.jpg",
+              "width": 640,
+              "height": 480
+             }
+            },
+            "channelTitle": "Yuri Koval'ov",
+            "playlistId": "PLcQuLA5Ps-q5ceV_jIX5p9bL8X7zm2A0C",
+            "position": 2,
+            "resourceId": {
+             "kind": "youtube#video",
+             "videoId": "zGeBffMzxPs"
+            }
+           },
+           "status": {
+            "privacyStatus": "public"
+           }
+          },
+          {
+           "kind": "youtube#playlistItem",
+           "etag": "\"Y3xTLFF3RLtHXX85JBgzzgp2Enw/X1aLsmb2WxMgM50G_qetkLF1g6k\"",
+           "id": "PL6d1wTE0FZeCWM5kTs_K13AqaYM2Qjz6lXjev-ubxDdQ",
+           "snippet": {
+            "publishedAt": "2015-07-02T13:51:10.000Z",
+            "channelId": "UC0gH1TcTcXyHAt6Q4eaaEdw",
+            "title": "The Story So Far  \"The Glass\"",
+            "description": "New album out 3/26/13 \nPhysical PRE ORDER - http://purenoise.merchnow.com\nItunes PRE ORDER - http://bit.ly/YAnZE6",
+            "thumbnails": {
+             "default": {
+              "url": "https://i.ytimg.com/vi/G-yt7yUNvlQ/default.jpg",
+              "width": 120,
+              "height": 90
+             },
+             "medium": {
+              "url": "https://i.ytimg.com/vi/G-yt7yUNvlQ/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             },
+             "high": {
+              "url": "https://i.ytimg.com/vi/G-yt7yUNvlQ/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+             },
+             "standard": {
+              "url": "https://i.ytimg.com/vi/G-yt7yUNvlQ/sddefault.jpg",
+              "width": 640,
+              "height": 480
+             },
+             "maxres": {
+              "url": "https://i.ytimg.com/vi/G-yt7yUNvlQ/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+             }
+            },
+            "channelTitle": "Yuri Koval'ov",
+            "playlistId": "PLcQuLA5Ps-q5ceV_jIX5p9bL8X7zm2A0C",
+            "position": 3,
+            "resourceId": {
+             "kind": "youtube#video",
+             "videoId": "G-yt7yUNvlQ"
+            }
+           },
+           "status": {
+            "privacyStatus": "public"
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 02 Jul 2015 14:05:51 GMT
+recorded_with: VCR 2.9.3

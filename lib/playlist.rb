@@ -13,7 +13,11 @@ class Playlist
   end
 
   def <<(ids = [])
-    @playlist.add_videos ids
+    exisiting_video_ids = playlist_items.map(&:video_id)
+    ids_to_add = ids.reject do |add_id|
+      exisiting_video_ids.any?{|existing_id| existing_id == add_id}
+    end
+    @playlist.add_videos ids_to_add
   end
 
   def id
