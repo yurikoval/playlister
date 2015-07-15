@@ -5,6 +5,7 @@ gem 'activesupport'
 gem 'redditkit'
 gem 'yt'
 gem 'dotenv'
+gem 'sinatra'
 group :development do
   gem 'rspec'
   gem 'vcr'
